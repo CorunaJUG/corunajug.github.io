@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CoruñaJUG - Coruña JVM User Group</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94025635-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-94025635-1');
+    </script>
+  </head>
+  <body>
+    <section class="hero is-medium site-hero">
+      <nav class="site-navbar navbar" aria-label="main navigation">
+        <div class="site-social-menu">
+          <a
+            href="https://www.meetup.com/CorunaJUG"
+            target="_blank"
+            class="site-social meetup"
+          >
+            <i class="fab fa-meetup"></i>
+          </a>
+          <a
+            href="https://twitter.com/CorunaJUG"
+            target="_blank"
+            class="site-social twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/corunajug/"
+            target="_blank"
+            class="site-social linkedin"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/corunajug"
+            target="_blank"
+            class="site-social github"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </nav>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <img
+            src="/img/corunajug-logo.png"
+            class="site-brand-image"
+            alt="CoruñaJug"
+          />
+          <h1 class="title has-text-white">CoruñaJUG</h1>
+          <h2 class="subtitle has-text-white">Coruña JVM User Group</h2>
+        </div>
+      </div>
+    </section>
+    <section class="site-intro">
+      <div class="container">
+        <div class="site-text-body">
+          Coruña JVM User Group (or CoruñaJUG that is shorter) is a tech community
+          born in Coruña with the purpose of join professional and amateurs
+          programmers or even non technical people that want to learn about
+          everything that runs over the JVM.
+        </div>
+        <div class="columns is-vcentered  is-mobile">
+          <div class="column has-text-centered">
+            <img src="/img/langs/java.png" class="site-lang-logo" alt="Java" />
+          </div>
+          <div class="column has-text-centered">
+            <img
+              src="/img/langs/kotlin.png"
+              class="site-lang-logo"
+              alt="Kotlin"
+            />
+          </div>
+          <div class="column has-text-centered">
+            <img
+              src="/img/langs/groovy.png"
+              class="site-lang-logo"
+              alt="Groovy"
+            />
+          </div>
+          <div class="column has-text-centered">
+            <img
+              src="/img/langs/scala.png"
+              class="site-lang-logo"
+              alt="Scala"
+            />
+          </div>
+        </div>
+        <div class="columns is-mobile">
+          <div class="column"><h4 class="site-lang-label">Java</h4></div>
+          <div class="column"><h4 class="site-lang-label">Kotlin</h4></div>
+          <div class="column"><h4 class="site-lang-label">Groovy</h4></div>
+          <div class="column"><h4 class="site-lang-label">Scala</h4></div>
+        </div>
+      </div>
+    </section>
+    <div class="site-block-spacer"></div>
+    <section class="site-dark-section">
+      <h3 class="site-block-title">Technology network in A Coruña</h3>
+      <div class="has-text-centered">
+        <div class="site-text-body">
+          <a href="https://corunadixital.gal" target="_blank">
+            <img
+              src="/img/sponsors/corunadixital.png"
+              class="site-corunadixital-logo"
+              alt="Coruña Dixital"
+            />
+          </a></br>
+          <a href="https://corunadixital.gal" target="_blank">Coruña Dixital</a>
+          is a program promoted by the department of Cultures and Knowledge of 
+          the A Coruña City Council, with the aim of disseminating in the city 
+          the new cultural and creative practices that have emerged from digital 
+          platforms.
+        </div>
+      </div>
+    </section>
+    <div class="site-block-spacer"></div>
+    <section>
+      <h3 class="site-block-title">Upcoming Meetup</h3>
+      <div class="has-text-centered">
+        <div class="site-no-upcoming-meetup" id="no-upcoming-meetup">
+          <p>We have not yet confirmed our next meetup</p>
+          <br />
+        </div>
+        <div class="container"><div id="upcoming-meetups-container"></div></div>
+      </div>
+    </section>
+    <div class="site-block-spacer"></div>
+    <div class="has-text-centered">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSenmMnsnIRhJ764p9LrzE_Oa_tQbvfc1-U0wUT9A0gBlPEqVA/viewform?usp=sf_link" target="_blank" class="button is-info is-medium">Do you have any idea?</a>
+    </div>
+    <div class="site-block-spacer"></div>
+    <div class="site-block-spacer"></div>
+    <section class="site-dark-section">
+      <h3 class="site-block-title">Past Meetups</h3>
+      <div class="container">
+        <div class="columns is-multiline" id="past-meetups-container"></div>
+        <div class="is-clearfix"></div>
+      </div>
+    </section>
+    <div class="site-block-spacer"></div>
+    <section>
+      <h3 class="site-block-title">Call for Papers</h3>
+      <div class="site-text-body">
+        Do you have any idea to make a talk?<br> Remember that there
+        is no reason that you need to be a "master" on the topic,
+        you just need to feel like doing it and share your knowledge
+        with other people.
+      </div>
+      <div class="has-text-centered">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7T7mpyLwwEbeLV-tbS3wmYaKZJYv_nRgw2_cILLFyVN1Iaw/viewform" target="_blank" class="button is-info is-medium">Go to the form</a>
+      </div>
+    </section>
+    <div class="site-block-spacer"></div>
+    <div class="site-block-spacer"></div>
+    <section class="site-dark-section">
+      <h3 class="site-block-title">Sponsors</h3>
+      <div class="site-text-body">
+        This group or community is possible thanks to all our sponsors that give
+        us the prizes that we give in the meetups, the place to do the meetups
+        itself along with other resources and the post-meetup beers.
+      </div>
+      <div class="container">
+        <div class="columns is-vcentered has-text-centered">
+          <div class="column">
+            <a href="https://coru.net" target="_blank">
+              <img
+                class="site-sponsor-item jetbrains"
+                src="img/sponsors/corunet.png"
+                alt="CoruNet"
+              />
+            </a>
+          </div>
+          <div class="column">
+            <a href="https://optaresolutions.com" target="_blank">
+              <img
+                class="site-sponsor-item optare"
+                src="img/sponsors/optaresolutions.png"
+                alt="Optaresolutions"
+              />
+            </a>
+          </div>
+          <div class="column">
+            <a href="https://jetbrains.com" target="_blank">
+              <img
+                class="site-sponsor-item jetbrains"
+                src="img/sponsors/jetbrains.png"
+                alt="Jetbrains"
+              />
+            </a>
+          </div>
+          <div class="column">
+            <a href="https://codely.tv" target="_blank">
+              <img
+                class="site-sponsor-item codely"
+                src="img/sponsors/codely.png"
+                alt="Kaleido Coworking"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="is-clearfix"></div>
+      </div>
+    </section>
+    <div class="site-block-spacer"></div>
+    <section>
+      <h3 class="site-block-title">Get in touch</h3>
+      <div class="container site-slack-container">
+        <div class="columns is-vcentered has-text-centered">
+          <div class="column is-one-third">
+            <a href="https://corunadevelopers.slack.com/" target="_blank">
+              <img
+                src="/img/slack-logo.png"
+                class="site-slack-logo"
+                alt="Join to the CoruñaDev slack"
+              />
+            </a>
+          </div>
+          <div class="column is-two-thirds">
+            <p>
+              We are on <strong>#CoruñaJUG</strong> channel inside the
+              <strong>CoruñaJUG slack group</strong>.
+            </p>
+            <p>
+              <a href="https://join.slack.com/t/corunadevelopers/shared_invite/zt-3ufwyvn4-tkUqyDJuxSlpc20tXcPedg" target="_blank"
+                >Join us!</a
+              >
+              It's free and is a good place for networking and there are other
+              interesting channels from the other Coruña Tech communities.
+            </p>
+          </div>
+        </div>
+        <div class="is-clearfix"></div>
+      </div>
+    </section>
+    <div class="site-block-spacer"></div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        Made with <i class="love fas fa-heart"></i> from the CoruñaJUG community
+        using <a href="https://bulma.io/" target="_blank">bulma</a>,
+        <a href="https://code.jquery.com/" target="_blank">jquery</a>,
+        <a href="https://www.jsviews.com" target="_blank">jsrender</a> and
+        <a href="https://fontawesome.com/" target="_blank">fontawesome</a>.
+      </div>
+    </footer>
+    <script id="upcoming-meetup-template" type="text/x-jsrender">
+      <div class="upcoming-site-meetup">
+        <div class="card is-large">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <img src="{{:featured_photo.photo_link}}" alt="{{:name}}" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="has-text-centered is-size-4">{{:name}}</h3>
+            <div class="date">
+              <i class="far fa-calendar-alt"></i>
+              {{:formated_date}}
+            </div>
+            <div class="location">
+              <i class="fas fa-map-marker-alt"></i>
+              {{:venue.name}}
+            </div>
+            <div class="site-block-spacer"></div>
+            <a href="{{:link}}" target="_blank" class="button is-danger">Ver en meetup</a>
+          </div>
+        </div>
+      </div>
+    </script>
+    <script id="past-meetup-template" type="text/x-jsrender">
+      <div class="column is-one-third">
+        <div class="site-meetup">
+          <a href="{{:link}}" target="_blank">
+            <div class="site-meetup-info">
+              <span class="name">{{:name}}</span>
+              <span class="date">
+                <i class="far fa-calendar-alt"></i>
+                {{:formated_date}}
+              </span>
+              <span class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                {{:venue.name}}
+              </span>
+            </div>
+            <img src="{{:featured_photo.photo_link}}" alt="{{:name}}" />
+          </a>
+        </div>
+      </div>
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.1/jsrender.min.js"
+      integrity="sha256-21dXJfiOXB1D/8kEXbDI0NB5qcUVUnkS3qgyOya/M6k="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/meetups-fetcher.js"></script>
+  </body>
+</html>
