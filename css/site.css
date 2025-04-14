@@ -223,4 +223,9 @@
 
 .site-telegram-container {
     max-width: 800px;
+    max-height: 120%;
+}
+
+.fa-telegram{
+    color: #0088cc;
 }
