@@ -2,15 +2,10 @@
     background-image: url('/img/hero-background.jpeg');
     background-position: center bottom;
     background-size: cover;
-    background-color: #e51937;
     color: white;
     position: relative;
     padding-bottom: 2.5em;
     margin-bottom: -1.25em;
-}
-
-.site-hero-fallback {
-    background-image: url('/corunajug/img/hero-background.jpeg');
 }
 
 
