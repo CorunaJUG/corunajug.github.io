@@ -21,11 +21,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-94025635-1');
     </script>
-        <script>
-          $(document).ready(function() {
-              $("#no-upcoming-meetup").removeClass("site-no-upcoming-meetup").addClass("site-text-body");
-          });
-      </script>
+
   </head>
   <body>
     <section class="hero is-medium site-hero">
@@ -117,11 +113,25 @@
     <section class="site-dark-section">
       <h3 class="site-block-title">Upcoming Meetup</h3>
       <div class="has-text-centered">
-        <div class="site-text-body" id="no-upcoming-meetup">
-          <p>We have not yet confirmed our next meetup</p>
-          <br />
+
+        <div class="container">
+          <div id="upcoming-meetups-container">
+
+            <a href="https://www.eventbrite.com/e/entradas-hola-mundo-1315271475389" target="_blank">
+              <h4>Hola Mundo.</h4>
+            </a>
+            <p>2025-05-08 at Sngular</p>
+            <div class="column has-text-centered">
+            <a href="https://www.eventbrite.com/e/entradas-hola-mundo-1315271475389" target="_blank">
+              <img
+                      class="site-sponsor-item jetbrains"
+                      src="img/talks/hola-mundo.jpg"
+                      alt="Sngular"
+              />
+            </a>
+          </div>
+          </div>
         </div>
-        <div class="container"><div id="upcoming-meetups-container"></div></div>
       </div>
     </section>
     <div class="site-block-spacer"></div>
