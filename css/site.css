@@ -9,6 +9,11 @@
     margin-bottom: -1.25em;
 }
 
+.site-hero-fallback {
+    background-image: url('/corunajug/img/hero-background.jpeg');
+}
+
+
 .site-brand-image {
     width: 12.5em;
     margin: 0 auto;
