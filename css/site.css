@@ -44,6 +44,12 @@
     color: #222;
 }
 
+.site-meeting-logo{
+
+        width: 80%;
+        max-width: 30em;
+}
+
 .site-social-menu {
     right: 0;
     padding: 0.3125em;
