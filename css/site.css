@@ -2,14 +2,20 @@
     background-image: url('/img/hero-background.jpeg');
     background-position: center bottom;
     background-size: cover;
+    background-color: #e51937;
     color: white;
     position: relative;
-    padding-bottom: 40px;
-    margin-bottom: -20px;
+    padding-bottom: 2.5em;
+    margin-bottom: -1.25em;
 }
 
+.site-hero-fallback {
+    background-image: url('/corunajug/img/hero-background.jpeg');
+}
+
+
 .site-brand-image {
-    width: 200px;
+    width: 12.5em;
     margin: 0 auto;
 }
 
@@ -17,10 +23,10 @@
     display: flex;
     align-items: center;
     background-color: white;
-    width: 240px;
-    height: 240px;
+    width: 15em;
+    height: 15em;
     border-radius: 50%;
-    margin: 0 auto 30px;
+    margin: 0 auto 1.875em;
 }
 
 .site-navbar {
@@ -39,18 +45,18 @@
     font-weight: 500;
     text-align: center;
     font-size: 1.5rem;
-    margin: 30px 0;
+    margin: 1.875em 0;
     color: #222;
 }
 
 .site-social-menu {
     right: 0;
-    padding: 5px;
+    padding: 0.3125em;
     position: absolute;
 }
 
 .site-social {
-    padding: 5px;
+    padding: 0.3125em;
     font-size: 1.8rem;
     transition: text-shadow .4s ease-in-out;
 }
@@ -59,51 +65,51 @@
     color: #00aced;
 }
 .site-social.twitter:hover {
-    text-shadow: 0 0 10px #fff;
+    text-shadow: 0 0 0.625em #fff;
 }
 
 .site-social.linkedin {
     color: #0077B5;
 }
 .site-social.linkedin:hover {
-    text-shadow: 0 0 10px #fff;
+    text-shadow: 0 0 0.625em #fff;
 }
 
 .site-social.meetup {
     color: #e51937;
 }
 .site-social.meetup:hover {
-    text-shadow: 0 0 10px #fff;
+    text-shadow: 0 0 0.625em #fff;
 }
 
 .site-social.github {
     color: #222;
 }
 .site-social.github:hover {
-    text-shadow: 0 0 10px #fff;
+    text-shadow: 0 0 0.625em #fff;
 }
 
 .site-intro {
-    margin: 40px 40px;
+    margin: 2.5em 2.5em;
 }
 
 .site-text-body {
     text-align: center;
-    padding: 10px 20px 20px;
-    margin: 0 auto 40px;
+    padding: 0.625em 1.25em 1.25em;
+    margin: 0 auto 2.5em;
     font-size: 1.5rem;
     font-weight: 200;
-    max-width: 720px;
+    max-width: 45em;
 }
 
 .site-lang-logo {
     width: 60%;
-    max-width: 160px;
+    max-width: 10em;
 }
 
 .site-lang-label {
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 0.625em;
     font-size: 1rem;
     font-weight: 500;
     color: #222;
@@ -115,11 +121,11 @@
 }
 
 .site-block-spacer {
-    height: 30px;
+    height: 1.875em;
 }
 
 .site-block-spacer.double {
-    height: 80px;
+    height: 5em;
 }
 
 .site-meetup {
@@ -143,7 +149,7 @@
 }
 
 .site-meetup-info span.name {
-    padding: 0 20px;
+    padding: 0 1.25em;
     line-height: 1.6rem;
     font-size: 1.3rem;
     text-align: center;
@@ -160,7 +166,7 @@
     text-align: center;
     width: 100%;
     position: absolute;
-    bottom: 40px;
+    bottom: 2.5em;
 }
 
 .site-meetup-info span.location {
@@ -169,24 +175,24 @@
     text-align: center;
     width: 100%;
     position: absolute;
-    bottom: 15px;
+    bottom: 0.9375em;
 }
 
 .upcoming-site-meetup {
-    max-width: 600px;
-    margin: 15px auto;
+    max-width: 37.5em;
+    margin: 0.9375em auto;
 }
 
 .site-vigotech-logo {
     width: 80%;
-    max-width: 250px;
+    max-width: 15.625em;
     display: block;
-    margin: 0 auto 30px;
+    margin: 0 auto 1.875em;
 }
 
 .footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
 }
 
 .love {
@@ -194,33 +200,38 @@
 }
 
 .site-dark-section {
-    padding: 30px 0;
+    padding: 1.875em 0;
     background-color: #F1F1F1;
 }
 
 .site-sponsor-item {
-    width: 250px;
+    width: 15.625em;
 }
 .site-sponsor-item.jetbrains {
-    width: 120px;
+    width: 7.5em;
 }
 
 .site-sponsor-item.codely {
-    width: 200px;
+    width: 12.5em;
 }
 
 .site-sponsor-item.optare {
-    width: 250px;
+    width: 15.625em;
 }
 
 .site-sponsor-item.corunet {
-    width: 120px;
+    width: 7.5em;
 }
 
-.site-slack-logo {
-    width: 200px;
+.site-telegram-logo {
+    width: 12.5em;
 }
 
-.site-slack-container {
-    max-width: 800px;
+.site-telegram-container {
+    max-width: 50em;
+    max-height: 120%;
+}
+
+.fa-telegram {
+    color: #0088cc;
 }
