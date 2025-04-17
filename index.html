@@ -110,30 +110,33 @@
       </div>
     </section>
     <div class="site-block-spacer"></div>
-    <section class="site-dark-section">
-      <h3 class="site-block-title">Upcoming Meetup</h3>
-      <div class="has-text-centered">
+    <script id="meetupTemplate" type="text/x-jsrender">
+      <section class="site-dark-section">
+        <h3 class="site-block-title">Upcoming Meetup</h3>
+        <div class="has-text-centered">
 
-        <div class="container">
-          <div id="upcoming-meetups-container">
+          <div class="container">
+            <div id="upcoming-meetups-container">
 
-            <a href="https://www.eventbrite.com/e/entradas-hola-mundo-1315271475389" target="_blank">
-              <h4>Hola Mundo.</h4>
-            </a>
-            <p>2025-05-08 at Sngular</p>
-            <div class="column has-text-centered">
-            <a href="https://www.eventbrite.com/e/entradas-hola-mundo-1315271475389" target="_blank">
-              <img
-                      class="site-meeting-logo"
-                      src="img/talks/hola-mundo.jpg"
-                      alt="Sngular"
-              />
-            </a>
-          </div>
+              <a href="{{:eventbrite}}" target="_blank">
+                <h4>{{:title}}</h4>
+              </a>
+              <h4>{{:date}} at {{:place}}</h4>
+              <div class="column has-text-centered">
+              <a href="{{:eventbrite}}" target="_blank">
+                <img
+                        class="site-meeting-logo"
+                        src="img/talks/{{:img}}"
+                        alt="meeting presentation"
+                />
+              </a>
+            </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </script>
+    <div id="upcoming-meetup"></div>
     <div class="site-block-spacer"></div>
     <section>
       <h3 class="site-block-title">Call for Papers</h3>
@@ -209,8 +212,19 @@
         <a href="https://fontawesome.com/" target="_blank">fontawesome</a>.
       </div>
     </footer>
-    <script id="upcoming-meetup-template" type="text/x-jsrender">
-      
+    <script id="upcoming-meetup-template">
+      fetch('/data/next.json')
+              .then(response => {
+                if (!response.ok) throw new Error("Network response was not ok");
+                return response.json();
+              })
+              .then(meetupData => {
+                const template = $.templates("#meetupTemplate");
+                document.getElementById("upcoming-meetup").innerHTML = template.render(meetupData);
+              })
+              .catch(error => {
+                console.error("Failed to load JSON:", error);
+              });
     </script>
     <script id="past-meetup-template" type="text/x-jsrender">
     </script>
