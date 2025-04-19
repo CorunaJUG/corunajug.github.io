@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CoruñaJUG - Coruña JVM User Group</title>
+    <title>CoruñaJUG - Coruña java User Group</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.3/css/bulma.min.css"
@@ -63,14 +63,14 @@
             />
           </div>
           <h1 class="title has-text-white">CoruñaJUG</h1>
-          <h2 class="subtitle has-text-white">Coruña JVM User Group</h2>
+          <h2 class="subtitle has-text-white">Coruña java User Group</h2>
         </div>
       </div>
     </section>
     <section class="site-intro">
       <div class="container">
         <div class="site-text-body">
-          Coruña JVM User Group (or CoruñaJUG that is shorter) is a tech community
+          Coruña java User Group (or CoruñaJUG that is shorter) is a tech community
           born in Coruña with the purpose of join professional and amateurs
           programmers or even non technical people that want to learn about
           everything that runs over the JVM.
@@ -213,7 +213,7 @@
       </div>
     </footer>
     <script id="upcoming-meetup-template">
-      fetch('/data/next.json')
+      fetch(`/data/next.json?nocache=${Math.random()}`)
               .then(response => {
                 if (!response.ok) throw new Error("Network response was not ok");
                 return response.json();
@@ -225,8 +225,6 @@
               .catch(error => {
                 console.error("Failed to load JSON:", error);
               });
-    </script>
-    <script id="past-meetup-template" type="text/x-jsrender">
     </script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
