@@ -241,3 +241,9 @@
 .fa-telegram {
     color: #0088cc;
 }
+
+@media (prefers-color-scheme: dark) {
+    :not(.site-dark-section) > h3.site-block-title{
+        color: #FaFaFa;
+    }
+}
