@@ -46,8 +46,8 @@
 
 .site-meeting-logo{
 
-        width: 80%;
-        max-width: 30em;
+    width: 80%;
+    max-width: 30em;
 }
 
 .site-social-menu {
@@ -75,6 +75,11 @@
 .site-social.linkedin:hover {
     text-shadow: 0 0 0.625em #fff;
 }
+
+.site-social.telegram:hover {
+    text-shadow: 0 0 0.625em #fff;
+}
+
 
 .site-social.meetup {
     color: #e51937;
