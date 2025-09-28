@@ -30,7 +30,7 @@ jobs:
         # Importante: el path debe coincidir con la carpeta de salida de tu build (típicamente _site o dist)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "_site"
+          path: "docs"
 
       - name: Deploy to GitHub Pages
         id: deployment
