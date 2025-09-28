@@ -22,16 +22,3 @@ jobs:
       - name: Build site
         # Asume que tienes una tarea llamada 'build' en tu deno.json o Deno.jsonc
         run: deno task build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        # Importante: el path debe coincidir con la carpeta de salida de tu build (típicamente _site o dist)
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "docs"
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
