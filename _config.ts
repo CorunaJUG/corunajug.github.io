@@ -4,7 +4,7 @@ import lightningCSS from "lume/plugins/lightningcss.ts";
 
 const site = lume({
   src: "./src",
-  dest: "./_site",
+  dest: "./docs",
   location: new URL("https://www.corunajug.org/"),
   jsFile: "/js/script.js",
   cssFile: "/css/styles.css"
