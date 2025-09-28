@@ -1,0 +1,175 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/1361e70f81.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+
+  </head>
+  <body>
+    <section class="hero is-medium site-hero">
+      <nav class="site-navbar navbar" aria-label="main navigation">
+        <div class="site-social-menu">
+          {{ for link of social }}
+          <a
+                  href="{{ link.url }}"
+                  target="_blank"
+                  class="site-social {{ link.platform }}"
+                  rel="noopener noreferrer"
+          >
+            <i class="{{ link.icon }}"></i>
+          </a>
+          {{ /for }}
+        </div>
+      </nav>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="round-frame">
+            <img
+              src="/img/corunajug-logo.png"
+              class="site-brand-image"
+              alt="CoruñaJug"
+            />
+          </div>
+          <h1 class="title has-text-white">CoruñaJUG</h1>
+          <h2 class="subtitle has-text-white">Coruña java User Group</h2>
+        </div>
+      </div>
+    </section>
+    <section class="site-intro">
+      <div class="container">
+        <div class="site-text-body">
+          {{ content }}
+        </div>
+
+        <div class="columns is-vcentered  is-mobile">
+          {{ for lang of languages }}
+          <div class="column has-text-centered">
+            <img src="{{ lang.icon }} " class="site-lang-logo" alt="{{ lang.name }}" />
+          </div>
+          {{ /for }}
+
+        </div>
+        <div class="columns is-mobile">
+          {{ for lang of languages }}
+          <div class="column"><h4 class="site-lang-label">{{ lang.name }}</h4></div>
+          {{ /for }}
+        </div>
+      </div>
+    </section>
+    <div class="site-block-spacer"></div>
+    <section class="site-dark-section">
+
+      <div id="upcoming-meetup">
+        <div class="has-text-centered">
+
+          <div class="container">
+            <div id="upcoming-meetups-container">
+              <h3 class="site-block-title">Next Meetup</h3>
+              {{ for event of upcoming_events }}
+              <a href="{{ event.url }}" target="_blank">
+                <h4>{{ event.name }}</h4>
+              </a>
+              <h4>{{ event.date }} at {{ event.location }}</h4>
+              <div class="column has-text-centered">
+                <a href="{{ event.url }}" target="_blank">
+                  <img class="site-meeting-logo" src="{{ event.img }}" alt="meeting presentation">
+                </a>
+              </div>
+              {{ /for }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="site-block-spacer"></div>
+    <section>
+      <h3 class="site-block-title">Call for Papers</h3>
+      <div class="site-text-body">
+        Do you have any idea to make a talk?<br> Remember that there
+        is no reason that you need to be a "master" on the topic,
+        you just need to feel like doing it and share your knowledge
+        with other people.
+      </div>
+      <div class="has-text-centered">
+        <a href="https://forms.gle/Go1y9yx2WLt8ijvY9"
+           target="_blank" class="button is-info is-medium">share your idea with us</a>
+      </div>
+    </section>
+    <div class="site-block-spacer"></div>
+    <div class="site-block-spacer"></div>
+    <section class="site-dark-section">
+      <h3 class="site-block-title">Sponsors</h3>
+      <div class="site-text-body">
+        This group or community is possible thanks to all our sponsors. 
+      </div>
+      <div class="container">
+
+        <div class="columns is-vcentered has-text-centered">
+          {{ for sponsor of sponsors }}
+          <div class="column">
+            <a href="{{ sponsor.url }}" target="_blank">
+              <img
+                class="site-sponsor-item"
+                src="{{ sponsor.img }}"
+                alt="{{ sponsor.name }}"
+              />
+            </a>
+          </div>
+          {{ /for }}
+        </div>
+        <div class="is-clearfix"></div>
+      </div>
+      <div class="site-text-body">
+        If you are interested on helping us, please <a href="mailto:corunajug@gmail.com">contact us</a> and we'll see how to colaborate.
+      </div>
+    </section>
+    <div class="site-block-spacer"></div>
+    <section>
+      <h3 class="site-block-title">Get in touch</h3>
+      <div class="container site-telegram-container">
+        <div class="columns is-vcentered has-text-centered">
+
+          <div class="column  has-text-centered">
+            <a href="https://t.me/laretasjava" target="_blank">
+              <i class="fab fa-telegram fa-3x big-icon" ></i>
+            </a>
+            <p>
+              We are on <strong>telegram</strong> on 
+              <strong>laretas java</strong>.
+            </p>
+            <p>
+              <a href="https://t.me/laretasjava" target="_blank"
+                >Join us!</a
+              >
+              It's free and is a good place for networking.
+            </p>
+          </div>
+
+        </div>
+        <div class="is-clearfix"></div>
+      </div>
+    </section>
+    <div class="site-block-spacer"></div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        Made with <i class="love fas fa-heart"></i> from the CoruñaJUG community
+        using
+        {{ for tech of technologies }}
+        {{ if tech.index == technologies.length }} and {{ /if }}
+          <a href="{{ tech.url }}" target="_blank">{{ tech.name }}</a>
+        {{ if tech.index < technologies.length }} , {{ /if }}
+        {{ /for }}
+      </div>
+    </footer>
+
+  </body>
+</html>

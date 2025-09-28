@@ -1,0 +1,9 @@
+languages:
+  - name: "Java"
+    icon: "img/langs/java.png"
+  - name: "Kotlin"
+    icon: "img/langs/kotlin.png"
+  - name: "groovy"
+    icon: "img/langs/groovy.png"
+  - name: "Scala"
+    icon: "img/langs/scala.png"

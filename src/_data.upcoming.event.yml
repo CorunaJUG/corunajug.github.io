@@ -1,0 +1,6 @@
+upcoming_events:
+  - name: "DDD, JVM e IA: modelizando Value Objects con el mínimo esfuerzo y el máximo"
+    date: "2025-09-24"
+    location: "Sngular"
+    url: "https://www.eventbrite.es/e/entradas-ddd-jvm-e-ia-modelizando-value-objects-con-el-minimo-esfuerzo-y-el-maximo-1684478674059"
+    img: "img/talks/ddd-vo.jpg"

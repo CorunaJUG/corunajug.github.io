@@ -1,0 +1,13 @@
+social:
+  - platform: "telegram"
+    icon: "fab fa-telegram"
+    url: "https://t.me/laretasjava"
+  - platform: "twitter"
+    icon: "fab fa-twitter"
+    url: "https://twitter.com/CorunaJUG"
+  - platform: "linkedin"
+    icon: "fab fa-linkedin"
+    url: "https://www.linkedin.com/company/corunajug/"
+  - platform: "github"
+    icon: "fab fa-github"
+    url: "https://github.com/corunajug"

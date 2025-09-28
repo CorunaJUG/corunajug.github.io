@@ -1,0 +1,249 @@
+.site-hero {
+    background-image: url('/img/hero-background.jpeg');
+    background-position: center bottom;
+    background-size: cover;
+    color: white;
+    position: relative;
+    padding-bottom: 2.5em;
+    margin-bottom: -1.25em;
+}
+
+
+.site-brand-image {
+    width: 12.5em;
+    margin: 0 auto;
+}
+
+.round-frame {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    margin: 0 auto 1.875em;
+}
+
+.site-navbar {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.site-navbar a {
+    color: white;
+}
+
+.site-block-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1.875em 0;
+    color: #222;
+}
+
+.site-meeting-logo{
+
+    width: 80%;
+    max-width: 30em;
+}
+
+.site-social-menu {
+    right: 0;
+    padding: 0.3125em;
+    position: absolute;
+}
+
+.site-social {
+    padding: 0.3125em;
+    font-size: 1.8rem;
+    transition: text-shadow .4s ease-in-out;
+}
+
+.site-social.twitter {
+    color: #00aced;
+}
+.site-social.twitter:hover {
+    text-shadow: 0 0 0.625em #fff;
+}
+
+.site-social.linkedin {
+    color: #0077B5;
+}
+.site-social.linkedin:hover {
+    text-shadow: 0 0 0.625em #fff;
+}
+
+.site-social.telegram:hover {
+    text-shadow: 0 0 0.625em #fff;
+}
+
+
+.site-social.meetup {
+    color: #e51937;
+}
+.site-social.meetup:hover {
+    text-shadow: 0 0 0.625em #fff;
+}
+
+.site-social.github {
+    color: #222;
+}
+.site-social.github:hover {
+    text-shadow: 0 0 0.625em #fff;
+}
+
+.site-intro {
+    margin: 2.5em 2.5em;
+}
+
+.site-text-body {
+    text-align: center;
+    padding: 0.625em 1.25em 1.25em;
+    margin: 0 auto 2.5em;
+    font-size: 1.5rem;
+    font-weight: 200;
+    max-width: 45em;
+}
+
+.site-lang-logo {
+    width: 60%;
+    max-width: 10em;
+}
+
+.site-lang-label {
+    text-transform: uppercase;
+    margin-top: 0.625em;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #222;
+    text-align: center;
+}
+
+.site-no-upcoming-meetup {
+    display: none;
+}
+
+.site-block-spacer {
+    height: 1.875em;
+}
+
+.site-block-spacer.double {
+    height: 5em;
+}
+
+.site-meetup {
+    position: relative;
+    line-height: 0;
+}
+
+.site-meetup-info {
+    position: absolute;
+    text-transform: uppercase;
+    color: #aaa;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.site-meetup-info:hover {
+    opacity: 1;
+}
+
+.site-meetup-info span.name {
+    padding: 0 1.25em;
+    line-height: 1.6rem;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #eee;
+    width: 100%;
+    position: absolute;
+    top: 36%;
+    transform: translate(0, -50%);
+}
+
+.site-meetup-info span.date {
+    line-height: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 2.5em;
+}
+
+.site-meetup-info span.location {
+    line-height: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0.9375em;
+}
+
+.upcoming-site-meetup {
+    max-width: 37.5em;
+    margin: 0.9375em auto;
+}
+
+.site-vigotech-logo {
+    width: 80%;
+    max-width: 15.625em;
+    display: block;
+    margin: 0 auto 1.875em;
+}
+
+.footer {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+
+.love {
+    color: #F22;
+}
+
+.site-dark-section {
+    padding: 1.875em 0;
+    background-color: #F1F1F1;
+}
+
+.site-sponsor-item {
+    width: 15.625em;
+}
+.site-sponsor-item.jetbrains {
+    width: 7.5em;
+}
+
+.site-sponsor-item.codely {
+    width: 12.5em;
+}
+
+.site-sponsor-item.optare {
+    width: 15.625em;
+}
+
+.site-sponsor-item.corunet {
+    width: 7.5em;
+}
+
+.site-telegram-logo {
+    width: 12.5em;
+}
+
+.site-telegram-container {
+    max-width: 50em;
+    max-height: 120%;
+}
+
+.fa-telegram {
+    color: #0088cc;
+}
+
+@media (prefers-color-scheme: dark) {
+    :not(.site-dark-section) > h3.site-block-title{
+        color: #FaFaFa;
+    }
+}
