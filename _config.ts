@@ -12,7 +12,7 @@ const site = lume({
 
 site.add("css");
 site.add("img");
-site.add("CNAME");
+site.add("CNAME", "CNAME");
 site.use(lightningCSS());
 
 export default site;
