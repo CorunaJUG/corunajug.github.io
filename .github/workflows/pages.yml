@@ -1,8 +1,12 @@
 name: Publish website to GitHub Pages
 on:
+  # Disparador 1: Para lanzamientos formales (lo que ya tenías)
   release:
-    # Este workflow se ejecuta SÓLO cuando un nuevo release es publicado
-    types: [published]
+    types: [ published ]
+
+  # Disparador 2: Para etiquetados rápidos y menos formales
+  push:
+    tags: [ '*' ]
 
 permissions:
   contents: read
