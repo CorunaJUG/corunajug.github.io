@@ -1,15 +1,20 @@
-name: Publish
+name: Publish website to GitHub Pages
 on:
-  push:
-    branches: [trunk]
+  release:
+    # Este workflow se ejecuta SÓLO cuando un nuevo release es publicado
+    types: [published]
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 jobs:
+  # -------------------------------------------------------------------
+  ## 1. Job: build (Construye la web y sube el artefacto)
+  # -------------------------------------------------------------------
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Clone repository
         uses: actions/checkout@v4
@@ -27,11 +32,25 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
-        # Importante: el path debe coincidir con la carpeta de salida de tu build (típicamente _site o dist)
+        # ¡IMPORTANTE! Verifica que 'docs' sea la carpeta de salida de tu build
         uses: actions/upload-pages-artifact@v3
         with:
           path: "docs"
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+---
+
+# -------------------------------------------------------------------
+## 2. Job: deploy (Publica el artefacto en GitHub Pages)
+# -------------------------------------------------------------------
+deploy:
+  environment:
+    # Requisito para la acción de despliegue
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
+  runs-on: ubuntu-latest
+  needs: build # Se ejecuta después del job 'build'
+
+  steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
