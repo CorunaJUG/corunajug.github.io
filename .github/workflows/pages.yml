@@ -1,12 +1,8 @@
-name: Publish website to GitHub Pages
-on:
-  # Disparador 1: Para lanzamientos formales (lo que ya tenías)
-  release:
-    types: [ published ]
+name: Publish on GitHub Pages
 
-  # Disparador 2: Para etiquetados rápidos y menos formales
+on:
   push:
-    tags: [ '*' ]
+    branches: [trunk]
 
 permissions:
   contents: read
@@ -14,11 +10,9 @@ permissions:
   id-token: write
 
 jobs:
-  # -------------------------------------------------------------------
-  ## 1. Job: build (Construye la web y sube el artefacto)
-  # -------------------------------------------------------------------
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Clone repository
         uses: actions/checkout@v4
@@ -29,32 +23,16 @@ jobs:
           cache: true
 
       - name: Build site
-        # Asume que tienes una tarea llamada 'build' en tu deno.json o Deno.jsonc
         run: deno task build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
-        # ¡IMPORTANTE! Verifica que 'docs' sea la carpeta de salida de tu build
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "docs"
+          path: "_site"
 
----
-
-# -------------------------------------------------------------------
-## 2. Job: deploy (Publica el artefacto en GitHub Pages)
-# -------------------------------------------------------------------
-deploy:
-  environment:
-    # Requisito para la acción de despliegue
-    name: github-pages
-    url: ${{ steps.deployment.outputs.page_url }}
-  runs-on: ubuntu-latest
-  needs: build # Se ejecuta después del job 'build'
-
-  steps:
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
