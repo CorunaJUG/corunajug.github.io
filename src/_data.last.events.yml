@@ -4,3 +4,8 @@ last_events:
     location: "Sngular"
     url: "https://www.eventbrite.es/e/entradas-ddd-jvm-e-ia-modelizando-value-objects-con-el-minimo-esfuerzo-y-el-maximo-1684478674059"
     img: "img/talks/ddd-vo.jpg"
+  - name: "Mamá, quiero ser ingeniero agéntico, estrategias atemporales para sobrevivir en un mundo IA-céntrico"
+    date: "2025-10-16"
+    location: "Cidade das TIC"
+    url: "https://www.eventbrite.es/e/mama-quiero-ser-ingeniero-agentico-tickets-1766491978059?"
+    img: "img/talks/ing-ai.png"
