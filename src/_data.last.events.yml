@@ -14,3 +14,8 @@ last_events:
     location: "Cidade das TIC"
     url: "https://www.eventbrite.es/e/entradas-full-stack-open-space-1974513421797"
     img: "img/talks/full-stack-open-space.jpg"
+  - name: "DDD by a Dummy"
+    date: "2026-01-29"
+    location: "Cidade das TIC"
+    url: "https://www.eventbrite.es/e/dddd-ddd-by-a-dummy-tickets-1980026497555"
+    img: "img/talks/DDD-Dummy.jpg"
