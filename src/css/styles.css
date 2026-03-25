@@ -69,6 +69,13 @@
     text-shadow: 0 0 0.625em #fff;
 }
 
+.site-social.mail {
+    color: #9fbdc1;
+}
+.site-social.mail:hover {
+    text-shadow: 0 0 0.625em #fff;
+}
+
 .site-social.linkedin {
     color: #0077B5;
 }

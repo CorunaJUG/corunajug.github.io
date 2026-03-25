@@ -11,3 +11,7 @@ social:
   - platform: "github"
     icon: "fab fa-github"
     url: "https://github.com/corunajug"
+    target: _blank
+  - platform: "mail"
+    icon: "fa fa-envelope-o"
+    url: "mailto:corunajug@gmail.com"
