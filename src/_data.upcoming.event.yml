@@ -1,6 +1,6 @@
 upcoming_events:
-  - name: "Novedades en java 26"
-    date: "2026-03-25"
+  - name: "Kotlin para desarrolladores Java: lo que te estás perdiendo"
+    date: "2026-04-22"
     location: "Cidade das TIC"
     url: "https://www.eventbrite.es/e/novedades-en-java-26-tickets-1984159965870"
-    img: "img/talks/java26.png"
+    img: "img/talks/kotlin-para-java.jpeg"
