@@ -1,6 +1,6 @@
 upcoming_events:
-  - name: "Kotlin para desarrolladores Java: lo que te estás perdiendo"
-    date: "2026-04-22"
+  - name: "Evolución de Scala: Java, Haskel y Rust"
+    date: "2026-05-21"
     location: "Cidade das TIC"
-    url: "https://www.eventbrite.es/e/novedades-en-java-26-tickets-1984159965870"
-    img: "img/talks/kotlin-para-java.jpeg"
+    url: "https://www.eventbrite.es/e/entradas-evolucion-de-scala-java-haskel-y-rust-1988869469121"
+    img: "img/talks/evolucion-scala.png"
