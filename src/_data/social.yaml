@@ -1,4 +1,3 @@
-social:
   - platform: "telegram"
     icon: "fab fa-telegram"
     url: "https://t.me/laretasjava"

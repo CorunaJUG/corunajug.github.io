@@ -1,6 +1,6 @@
 import lume from "lume/mod.ts";
 import lightningCSS from "lume/plugins/lightningcss.ts";
-
+import date from "lume/plugins/date.ts";
 
 const site = lume({
   src: "./src",
@@ -14,5 +14,6 @@ site.add("css");
 site.add("img");
 site.add("CNAME", "CNAME");
 site.use(lightningCSS());
+site.use(date());
 
 export default site;

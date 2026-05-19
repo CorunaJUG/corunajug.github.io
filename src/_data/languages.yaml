@@ -1,4 +1,3 @@
-languages:
   - name: "Java"
     icon: "img/langs/java.png"
   - name: "Kotlin"
