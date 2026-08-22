@@ -3,7 +3,7 @@ id: "https://www.corunajug.org/events/ddd-jvm-e-ia-modelizando-value-objects-con
 url: "https://www.eventbrite.es/e/entradas-ddd-jvm-e-ia-modelizando-value-objects-con-el-minimo-esfuerzo-y-el-maximo-1684478674059"
 name: "DDD, JVM e IA: modelizando Value Objects con el mínimo esfuerzo y el máximo"
 image:
-  - "https://www.corunajug.org/img/talks/ddd-vo.jpg"
+  - "img/talks/ddd-vo.jpg"
 organizers:
   - name: "Coruña JUG"
     url: "https://www.corunajug.org"

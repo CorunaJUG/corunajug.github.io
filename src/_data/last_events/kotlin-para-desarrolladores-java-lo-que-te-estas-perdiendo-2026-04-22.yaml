@@ -3,7 +3,7 @@ id: "https://www.corunajug.org/events/kotlin-para-desarrolladores-java-lo-que-te
 url: "https://www.eventbrite.es/e/novedades-en-java-26-tickets-1984159965870"
 name: "Kotlin para desarrolladores Java: lo que te estás perdiendo"
 image:
-  - "https://www.corunajug.org/img/talks/kotlin-para-java.jpeg"
+  - "img/talks/kotlin-para-java.jpeg"
 organizers:
   - name: "Coruña JUG"
     url: "https://www.corunajug.org"

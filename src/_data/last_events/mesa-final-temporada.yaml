@@ -3,7 +3,7 @@ id: "https://www.corunajug.org/events/mesa-final-temporada"
 url: "https://www.eventbrite.es/e/mesa-redonda-de-comunidades-tickets-1991005340570"
 name: "Mesa redonda de comunidades"
 image:
-  - "https://www.corunajug.org/img/talks/mesa-final-temporada.png"
+  - "img/talks/mesa-final-temporada.png"
 organizers:
   - name: "Comunidades tech de A Coruña"
 startDate: "2026-07-02T19:00"

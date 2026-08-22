@@ -9,7 +9,21 @@
 
 export const url = "/feed.json";
 
-const FEED_ORGANIZER = { name: "Coruña JUG", url: "https://www.corunajug.org" };
+const SITE_URL = "https://www.corunajug.org";
+const FEED_ORGANIZER = { name: "Coruña JUG", url: SITE_URL };
+
+// Event data keeps `image` as paths relative to the site root (so they work
+// in local preview too, before they're deployed) — the spec requires bare
+// https URLs, so the feed absolutizes them here.
+function absolutizeImages(image) {
+  if (!image) return image;
+  return image.map((entry) => {
+    const src = typeof entry === "string" ? entry : entry.url;
+    if (/^https?:\/\//.test(src)) return entry;
+    const absolute = `${SITE_URL}/${src.replace(/^\/+/, "")}`;
+    return typeof entry === "string" ? absolute : { ...entry, url: absolute };
+  });
+}
 
 function isDefaultOrganizer(organizers) {
   return (
@@ -43,7 +57,7 @@ function toFeedEvent(event) {
     ...(url ? { url } : {}),
     name,
     ...(description ? { description } : {}),
-    ...(image ? { image } : {}),
+    ...(image ? { image: absolutizeImages(image) } : {}),
     // Only declare organizers when they differ from the feed default:
     // declaring them REPLACES the inherited list rather than adding to it.
     ...(isDefaultOrganizer(organizers) ? {} : { organizers }),

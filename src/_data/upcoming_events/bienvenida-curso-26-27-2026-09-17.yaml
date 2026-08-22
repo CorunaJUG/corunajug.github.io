@@ -2,7 +2,7 @@ specVersion: "0.3.0"
 id: "https://www.corunajug.org/events/bienvenida-curso-26-27-2026-09-17"
 name: "Empezamos el curso 26/27"
 image:
-  - "https://www.corunajug.org/img/talks/java26.png"
+  - "img/talks/default-corunajug-cascarilla.jpeg"
 organizers:
   - name: "Coruña JUG"
     url: "https://www.corunajug.org"
@@ -22,5 +22,6 @@ location:
     country: "ES"
 tags: ["java", "coruña jug", "cascarilla tech"]
 languages: ["es"]
+status: "tentative"
 license: "CC-BY-4.0"
 updatedAt: "2026-08-22T00:00:00Z"
