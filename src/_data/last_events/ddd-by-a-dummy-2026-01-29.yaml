@@ -1,9 +1,19 @@
-title: "DDD by a Dummy"
-description: ""
-date: 2026-01-29T19:30:00+01:00
-endDate: 2026-01-29T21:30:00+01:00
-location: "Cidade das TIC"
-rsvpLink: "https://www.eventbrite.es/e/dddd-ddd-by-a-dummy-tickets-1980026497555"
+specVersion: "0.3.0"
+id: "https://www.corunajug.org/events/ddd-by-a-dummy-2026-01-29"
+url: "https://www.eventbrite.es/e/dddd-ddd-by-a-dummy-tickets-1980026497555"
+name: "DDD by a Dummy"
+image:
+  - "https://www.corunajug.org/img/talks/DDD-Dummy.jpg"
+organizers:
+  - name: "Coruña JUG"
+    url: "https://www.corunajug.org"
+startDate: "2026-01-29T19:30"
+endDate: "2026-01-29T21:30"
+timezone: "Europe/Madrid"
+attendanceMode: "in-person"
+location:
+  venue: "Cidade das TIC"
 tags: []
-community: "Coruña JUG"
-image: "img/talks/DDD-Dummy.jpg"
+languages: ["es"]
+license: "CC-BY-4.0"
+updatedAt: "2026-08-22T00:00:00Z"

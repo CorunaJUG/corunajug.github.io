@@ -1,9 +1,19 @@
-title: "Evolución de Scala: Java, Haskel y Rust"
-description: ""
-date: 2026-05-21T19:30:00+02:00
-endDate: 2026-05-21T21:30:00+02:00
-location: "Cidade das TIC"
-rsvpLink: "https://www.eventbrite.es/e/entradas-evolucion-de-scala-java-haskel-y-rust-1988869469121"
+specVersion: "0.3.0"
+id: "https://www.corunajug.org/events/evolucion-scala-2026-05-21"
+url: "https://www.eventbrite.es/e/entradas-evolucion-de-scala-java-haskel-y-rust-1988869469121"
+name: "Evolución de Scala: Java, Haskel y Rust"
+image:
+  - "https://www.corunajug.org/img/talks/evolucion-scala.png"
+organizers:
+  - name: "Coruña JUG"
+    url: "https://www.corunajug.org"
+startDate: "2026-05-21T19:30"
+endDate: "2026-05-21T21:30"
+timezone: "Europe/Madrid"
+attendanceMode: "in-person"
+location:
+  venue: "Cidade das TIC"
 tags: []
-community: "Coruña JUG"
-image: "img/talks/evolucion-scala.png"
+languages: ["es"]
+license: "CC-BY-4.0"
+updatedAt: "2026-08-22T00:00:00Z"

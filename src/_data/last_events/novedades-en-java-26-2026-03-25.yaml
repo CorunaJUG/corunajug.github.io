@@ -1,9 +1,19 @@
-title: "Novedades en java 26"
-description: ""
-date: 2026-03-25T19:30:00+01:00
-endDate: 2026-03-25T21:30:00+01:00
-location: "Cidade das TIC"
-rsvpLink: "https://www.eventbrite.es/e/novedades-en-java-26-tickets-1984159965870"
+specVersion: "0.3.0"
+id: "https://www.corunajug.org/events/novedades-en-java-26-2026-03-25"
+url: "https://www.eventbrite.es/e/novedades-en-java-26-tickets-1984159965870"
+name: "Novedades en java 26"
+image:
+  - "https://www.corunajug.org/img/talks/java26.png"
+organizers:
+  - name: "Coruña JUG"
+    url: "https://www.corunajug.org"
+startDate: "2026-03-25T19:30"
+endDate: "2026-03-25T21:30"
+timezone: "Europe/Madrid"
+attendanceMode: "in-person"
+location:
+  venue: "Cidade das TIC"
 tags: []
-community: "Coruña JUG"
-image: "img/talks/java26.png"
+languages: ["es"]
+license: "CC-BY-4.0"
+updatedAt: "2026-08-22T00:00:00Z"

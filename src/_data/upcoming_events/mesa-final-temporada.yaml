@@ -1,9 +1,18 @@
-title: "Mesa redonda de comunidades"
-description: ""
-date: 2026-07-02T19:00:00+02:00
-endDate: 2026-07-02T21:30:00+02:00
-location: "Cidade das TIC. Oficinas Odeene"
-rsvpLink: "https://www.eventbrite.es/e/mesa-redonda-de-comunidades-tickets-1991005340570"
-tags: [Coruna_tech]
-community: "All together"
-image: "img/talks/mesa-final-temporada.png"
+specVersion: "0.3.0"
+id: "https://www.corunajug.org/events/mesa-final-temporada"
+url: "https://www.eventbrite.es/e/mesa-redonda-de-comunidades-tickets-1991005340570"
+name: "Mesa redonda de comunidades"
+image:
+  - "https://www.corunajug.org/img/talks/mesa-final-temporada.png"
+organizers:
+  - name: "Comunidades tech de A Coruña"
+startDate: "2026-07-02T19:00"
+endDate: "2026-07-02T21:30"
+timezone: "Europe/Madrid"
+attendanceMode: "in-person"
+location:
+  venue: "Cidade das TIC. Oficinas Odeene"
+tags: ["Coruna_tech"]
+languages: ["es"]
+license: "CC-BY-4.0"
+updatedAt: "2026-08-22T00:00:00Z"

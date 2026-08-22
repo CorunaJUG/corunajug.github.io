@@ -74,13 +74,13 @@
             <div id="upcoming-meetups-container">
               <h3 class="site-block-title">Next Meetup</h3>
               {{ for event of upcoming_events }}
-              <a href="{{ event.rsvpLink }}" target="_blank">
-                <h4>{{ event.title }}</h4>
+              <a href="{{ event.url }}" target="_blank">
+                <h4>{{ event.name }}</h4>
               </a>
-              <h4>{{ event.date |> date('DATE') }} at {{ event.location }}</h4>
+              <h4>{{ event.startDate |> date('DATE') }} at {{ event.location.venue }}</h4>
               <div class="column has-text-centered">
-                <a href="{{ event.rsvpLink }}" target="_blank">
-                  <img class="site-meeting-logo" src="{{ event.image }}" alt="meeting presentation">
+                <a href="{{ event.url }}" target="_blank">
+                  <img class="site-meeting-logo" src="{{ event.image[0] }}" alt="meeting presentation">
                 </a>
               </div>
               {{ /for }}
