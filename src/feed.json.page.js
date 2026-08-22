@@ -40,7 +40,7 @@ function toFeedEvent(event) {
 
   const feedEvent = {
     id,
-    url,
+    ...(url ? { url } : {}),
     name,
     ...(description ? { description } : {}),
     ...(image ? { image } : {}),

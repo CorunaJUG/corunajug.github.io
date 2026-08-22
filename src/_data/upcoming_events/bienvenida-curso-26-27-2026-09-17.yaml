@@ -1,14 +1,15 @@
 specVersion: "0.3.0"
-id: "https://www.corunajug.org/events/evolucion-scala-2026-05-21"
-url: "https://www.eventbrite.es/e/entradas-evolucion-de-scala-java-haskel-y-rust-1988869469121"
-name: "Evolución de Scala: Java, Haskel y Rust"
+id: "https://www.corunajug.org/events/bienvenida-curso-26-27-2026-09-17"
+name: "Empezamos el curso 26/27"
 image:
-  - "https://www.corunajug.org/img/talks/evolucion-scala.png"
+  - "https://www.corunajug.org/img/talks/java26.png"
 organizers:
   - name: "Coruña JUG"
     url: "https://www.corunajug.org"
-startDate: "2026-05-21T19:30"
-endDate: "2026-05-21T21:30"
+  - name: "Cascarilla Tech"
+    url: "https://www.cascarillatech.org"
+startDate: "2026-09-17T19:30"
+endDate: "2026-09-17T21:30"
 timezone: "Europe/Madrid"
 attendanceMode: "in-person"
 location:
@@ -19,7 +20,7 @@ location:
     region: "Galicia"
     postalCode: "15009"
     country: "ES"
-tags: ["scala", "java", "rust", "haskell"]
+tags: ["java", "coruña jug", "cascarilla tech"]
 languages: ["es"]
 license: "CC-BY-4.0"
 updatedAt: "2026-08-22T00:00:00Z"

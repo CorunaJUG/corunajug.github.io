@@ -74,14 +74,22 @@
             <div id="upcoming-meetups-container">
               <h3 class="site-block-title">Next Meetup</h3>
               {{ for event of upcoming_events }}
+              {{ if event.url }}
               <a href="{{ event.url }}" target="_blank">
                 <h4>{{ event.name }}</h4>
               </a>
+              {{ else }}
+              <h4>{{ event.name }}</h4>
+              {{ /if }}
               <h4>{{ event.startDate |> date('DATE') }} at {{ event.location.venue }}</h4>
               <div class="column has-text-centered">
+                {{ if event.url }}
                 <a href="{{ event.url }}" target="_blank">
                   <img class="site-meeting-logo" src="{{ event.image[0] }}" alt="meeting presentation">
                 </a>
+                {{ else }}
+                <img class="site-meeting-logo" src="{{ event.image[0] }}" alt="meeting presentation">
+                {{ /if }}
               </div>
               {{ /for }}
             </div>
