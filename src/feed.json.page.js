@@ -7,6 +7,8 @@
 // spec. That's why most events below only carry the fields specific to
 // them: id, name, dates, location, tags...
 
+export const url = "/feed.json";
+
 const FEED_ORGANIZER = { name: "Coruña JUG", url: "https://www.corunajug.org" };
 
 function isDefaultOrganizer(organizers) {
@@ -59,9 +61,12 @@ function toFeedEvent(event) {
   return feedEvent;
 }
 
-export default function ({ upcoming_events = [], last_events = [] }) {
-  const events = [...upcoming_events, ...last_events]
-    .slice()
+function asArray(events) {
+  return Array.isArray(events) ? events : Object.values(events ?? {});
+}
+
+export default function ({ upcoming_events, last_events }) {
+  const events = [...asArray(upcoming_events), ...asArray(last_events)]
     .sort((a, b) => a.startDate.localeCompare(b.startDate))
     .map(toFeedEvent);
 
