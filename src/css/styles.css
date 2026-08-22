@@ -50,6 +50,25 @@
     max-width: 30em;
 }
 
+.site-tentative-badge {
+    display: inline-block;
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffe69c;
+    border-radius: 999px;
+    padding: 0.25em 0.9em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+.site-tentative-date {
+    color: #856404;
+    font-style: italic;
+}
+
 .site-social-menu {
     right: 0;
     padding: 0.3125em;
