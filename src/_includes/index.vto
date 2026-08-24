@@ -85,7 +85,7 @@
               <h4>{{ event.name }}</h4>
               {{ /if }}
               <h4 class="{{ if event.status == 'tentative' }}site-tentative-date{{ /if }}">
-                {{ event.startDate |> date('DATE') }} at {{ event.location.venue }}
+                {{ event.startDate |> date('dd/MM/yyyy HH:mm') }} at {{ event.location.venue }}
                 {{ if event.status == "tentative" }}(por confirmar){{ /if }}
               </h4>
               <div class="column has-text-centered">
@@ -99,6 +99,39 @@
               </div>
               {{ /for }}
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+        <div class="site-block-spacer"></div>
+    </section>
+    <section>
+      <div class="has-text-centered">
+        <div class="container">
+          <h3 class="site-block-title">Past Meetups</h3>
+          <div class="columns is-multiline is-mobile">
+            {{ set sortedLastEvents = (Array.isArray(last_events) ? last_events : Object.values(last_events ?? {})).slice().sort((a, b) => b.startDate.localeCompare(a.startDate)) }}
+            {{ for event of sortedLastEvents }}
+            <div class="column is-one-quarter-desktop is-half-tablet is-half-mobile">
+              {{ if event.url }}
+              <a href="{{ event.url }}" target="_blank" class="site-meetup">
+              {{ else }}
+              <div class="site-meetup">
+              {{ /if }}
+                <img src="{{ event.image[0] }}" alt="{{ event.name }}">
+                <div class="site-meetup-info">
+                  <span class="name">{{ event.name }}</span>
+                  <span class="date">{{ event.startDate |> date('dd/MM/yyyy') }}</span>
+                  <span class="location">{{ event.location.venue }}</span>
+                </div>
+              {{ if event.url }}
+              </a>
+              {{ else }}
+              </div>
+              {{ /if }}
+            </div>
+            {{ /for }}
           </div>
         </div>
       </div>
@@ -211,6 +244,11 @@
           <a href="{{ tech.url }}" target="_blank">{{ tech.name }}</a>
         {{ if tech.index < technologies.length }} , {{ /if }}
         {{ /for }}
+      </div>
+      <div class="content has-text-centered site-ote-note">
+        Publicamos os nosos eventos en formato aberto
+        <a href="https://opentechevents.org" target="_blank" rel="noopener noreferrer">OpenTechEvents (OTE)</a>
+        — consulta o noso <a href="/feed.json" target="_blank">feed.json</a>.
       </div>
     </footer>
 

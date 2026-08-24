@@ -1,0 +1,43 @@
+{
+  "specVersion": "0.3.0",
+  "id": "https://www.corunajug.org/events/bienvenida-curso-26-27-2026-09-17",
+  "name": "Empezamos el curso 26/27",
+  "image": [
+    "img/talks/default-corunajug-cascarilla.jpeg"
+  ],
+  "organizers": [
+    {
+      "name": "Coruña JUG",
+      "url": "https://www.corunajug.org"
+    },
+    {
+      "name": "Cascarilla Tech",
+      "url": "https://www.cascarillatech.org"
+    }
+  ],
+  "startDate": "2026-09-24T19:30",
+  "endDate": "2026-09-24T21:30",
+  "timezone": "Europe/Madrid",
+  "attendanceMode": "in-person",
+  "location": {
+    "venue": "Cidade das TIC",
+    "address": {
+      "street": "Av. de Pedralonga",
+      "locality": "A Coruña",
+      "region": "Galicia",
+      "postalCode": "15009",
+      "country": "ES"
+    }
+  },
+  "tags": [
+    "java",
+    "coruña jug",
+    "cascarilla tech"
+  ],
+  "languages": [
+    "es"
+  ],
+  "status": "tentative",
+  "license": "CC-BY-4.0",
+  "updatedAt": "2026-08-22T00:00:00Z"
+}
