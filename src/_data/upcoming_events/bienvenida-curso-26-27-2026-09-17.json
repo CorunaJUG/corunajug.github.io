@@ -15,6 +15,13 @@
       "url": "https://www.cascarillatech.org"
     }
   ],
+  "sponsors": [
+    {
+      "name": "Odeene",
+      "url": "https://odeene.es/inicio",
+      "img": "img/sponsors/odeene-logo.png"
+    }
+  ],
   "startDate": "2026-09-24T19:30",
   "endDate": "2026-09-24T21:30",
   "timezone": "Europe/Madrid",
