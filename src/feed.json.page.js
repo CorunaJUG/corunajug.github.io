@@ -79,8 +79,24 @@ function asArray(events) {
   return Array.isArray(events) ? events : Object.values(events ?? {});
 }
 
+// The spec (OTE v0.3, D015) rejects a feed where any event's updatedAt is
+// later than the feed's own — the feed can't contain a revision that,
+// per its own timestamp, didn't exist yet when it was generated. A
+// hardcoded feed-level updatedAt drifts out of sync the moment an event
+// gets touched without someone remembering to bump this too (already
+// happened once), so derive it instead: the latest updatedAt across all
+// events, never earlier than that.
+function latestUpdatedAt(events, fallback) {
+  const stamps = events.map((e) => e.updatedAt).filter(Boolean);
+  if (stamps.length === 0) return fallback;
+  return stamps.reduce((latest, current) =>
+    new Date(current) > new Date(latest) ? current : latest
+  );
+}
+
 export default function ({ upcoming_events, last_events }) {
-  const events = [...asArray(upcoming_events), ...asArray(last_events)]
+  const rawEvents = [...asArray(upcoming_events), ...asArray(last_events)];
+  const events = [...rawEvents]
     .sort((a, b) => a.startDate.localeCompare(b.startDate))
     .map(toFeedEvent);
 
@@ -96,7 +112,7 @@ export default function ({ upcoming_events, last_events }) {
     ],
     license: "CC-BY-4.0",
     licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
-    updatedAt: "2026-08-22T00:00:00Z",
+    updatedAt: latestUpdatedAt(rawEvents, "2020-01-01T00:00:00Z"),
     events,
   };
 
