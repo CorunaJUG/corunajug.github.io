@@ -17,7 +17,14 @@
   "timezone": "Europe/Madrid",
   "attendanceMode": "in-person",
   "location": {
-    "venue": "Sngular"
+    "venue": "Sngular",
+    "address": {
+      "street": "Rúa Sor Joaquina, 6",
+      "locality": "A Coruña",
+      "region": "Galicia",
+      "postalCode": "15011",
+      "country": "ES"
+    }
   },
   "tags": [
     "ddd",
@@ -28,5 +35,5 @@
     "es"
   ],
   "license": "CC-BY-4.0",
-  "updatedAt": "2026-08-22T00:00:00Z"
+  "updatedAt": "2026-08-28T00:00:00Z"
 }
