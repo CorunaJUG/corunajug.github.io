@@ -9,7 +9,7 @@
 
 export const url = "/feed.json";
 
-const SITE_URL = "https://www.corunajug.org";
+const SITE_URL = "https://corunajug.org";
 const FEED_ORGANIZER = { name: "Coruña JUG", url: SITE_URL };
 
 // Event data keeps `image` as paths relative to the site root (so they work
@@ -107,9 +107,7 @@ export default function ({ upcoming_events, last_events }) {
       "Charlas y meetups de la comunidad Coruña Java User Group.",
     url: "https://www.corunajug.org",
     textLanguage: "es",
-    organizers: [
-      { ...FEED_ORGANIZER, email: "corunajug@gmail.com" },
-    ],
+    organizers: [FEED_ORGANIZER],
     license: "CC-BY-4.0",
     licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
     updatedAt: latestUpdatedAt(rawEvents, "2020-01-01T00:00:00Z"),
