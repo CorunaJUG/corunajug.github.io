@@ -74,7 +74,7 @@ body.pres-body {
 .pres-slide--section {
     background: linear-gradient(120deg, #ffcd3c, #ff8a3c, #ff5f6d, #ffcd3c);
     background-size: 300% 300%;
-    color: #1a1a1a;
+    color: #fff;
     animation: pres-gradient-shift 6s ease infinite;
 }
 
@@ -83,7 +83,18 @@ body.pres-body {
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    animation: pres-pop-in 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+}
+
+.pres-slide--section h1.pres-typing::after {
+    content: "";
+    display: inline-block;
+    width: 0.06em;
+    height: 0.85em;
+    margin-left: 0.12em;
+    background: currentColor;
+    vertical-align: -0.05em;
+    animation: pres-caret-blink 0.9s steps(1) infinite;
 }
 
 @keyframes pres-gradient-shift {
@@ -92,9 +103,9 @@ body.pres-body {
     100% { background-position: 0% 50%; }
 }
 
-@keyframes pres-pop-in {
-    0% { opacity: 0; transform: translateY(25px) scale(0.85); }
-    100% { opacity: 1; transform: translateY(0) scale(1); }
+@keyframes pres-caret-blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
 }
 
 .pres-slide-inner {

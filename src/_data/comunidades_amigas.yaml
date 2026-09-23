@@ -64,8 +64,3 @@
   url: "https://galicia.isf.es/"
   tags: ["Enxeñería", "Comunidade"]
 
-- name: "Coruña JUG"
-  description: "Comunidade tecnolóxica nada na Coruña para unir a programadores e afeccionados arredor da JVM."
-  img: "img/corunajug-logo.png"
-  url: "https://corunajug.org/"
-  tags: ["Java", "Kotlin", "Groovy", "Scala"]

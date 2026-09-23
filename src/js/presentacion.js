@@ -8,18 +8,35 @@
 
   let index = 0;
 
-  function replayEntranceAnimation(slide) {
+  function typewrite(el, text, speed = 60) {
+    el.textContent = "";
+    el.classList.add("pres-typing");
+    let i = 0;
+    const step = () => {
+      el.textContent = text.slice(0, i);
+      i++;
+      if (i <= text.length) {
+        el._typeTimer = setTimeout(step, speed);
+      } else {
+        el.classList.remove("pres-typing");
+      }
+    };
+    step();
+  }
+
+  function replaySectionHeading(slide) {
+    if (!slide.classList.contains("pres-slide--section")) return;
     const heading = slide.querySelector("h1");
     if (!heading) return;
-    heading.style.animation = "none";
-    void heading.offsetWidth;
-    heading.style.animation = "";
+    if (!heading.dataset.fullText) heading.dataset.fullText = heading.textContent;
+    clearTimeout(heading._typeTimer);
+    typewrite(heading, heading.dataset.fullText);
   }
 
   function render() {
     slides.forEach((slide, i) => slide.classList.toggle("is-active", i === index));
     if (currentEl) currentEl.textContent = String(index + 1);
-    replayEntranceAnimation(slides[index]);
+    replaySectionHeading(slides[index]);
   }
 
   function goTo(newIndex) {
