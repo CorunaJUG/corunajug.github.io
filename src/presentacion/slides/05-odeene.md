@@ -5,6 +5,6 @@ kind: cover
 hexTall: true
 ---
 
-![JetBrains](/img/sponsors/jetbrains.png)
+![Odeene](/img/sponsors/odeene-logo.png)
 
-# JetBrains
+# Odeene

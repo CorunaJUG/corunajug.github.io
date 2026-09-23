@@ -1,6 +1,6 @@
 ---
 type: slide
-order: 8
+order: 9
 kind: content
 link: https://galicia.wordcamp.org/2026/
 ---

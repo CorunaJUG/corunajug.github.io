@@ -1,6 +1,6 @@
 ---
 type: slide
-order: 7
+order: 8
 kind: communities
 title: Comunidades amigas
 ---

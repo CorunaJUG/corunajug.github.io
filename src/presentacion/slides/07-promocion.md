@@ -1,7 +1,7 @@
 ---
 type: slide
-order: 13
+order: 7
 kind: section
 ---
 
-# Spoiler alert
+# Promosió
