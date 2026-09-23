@@ -13,7 +13,7 @@
     <div class="pres-deck" id="pres-deck">
       {{ for slide of slides }}
       <section
-        class="pres-slide pres-slide--{{ slide.kind }}"
+        class="pres-slide pres-slide--{{ slide.kind }}{{ if slide.hexTall }} pres-slide--hex-tall{{ /if }}"
         data-slide
         {{ if slide.hexBg }}style="--pres-hex-bg: {{ slide.hexBg }};"{{ /if }}
       >

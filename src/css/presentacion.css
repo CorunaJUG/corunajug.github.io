@@ -59,6 +59,11 @@ body.pres-body {
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
+.pres-slide--hex-tall img {
+    padding-top: 3.4em;
+    padding-bottom: 3.4em;
+}
+
 .pres-slide--cover h1 {
     font-size: 3rem;
     margin: 0 0 0.3em;
