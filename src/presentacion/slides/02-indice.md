@@ -7,6 +7,4 @@ title: Índice
 
 1. Presentaciones
 2. Promosió
-3. Contenido de ejemplo
-4. WordCamp Galicia
-5. Enlace a comunidades amigas (Cascarilla Tech)
+3. Coruña JUG

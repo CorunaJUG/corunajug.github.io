@@ -12,7 +12,11 @@
     {{ set slides = search.pages("type=slide", "order") }}
     <div class="pres-deck" id="pres-deck">
       {{ for slide of slides }}
-      <section class="pres-slide pres-slide--{{ slide.kind }}" data-slide>
+      <section
+        class="pres-slide pres-slide--{{ slide.kind }}"
+        data-slide
+        {{ if slide.hexBg }}style="--pres-hex-bg: {{ slide.hexBg }};"{{ /if }}
+      >
         {{ if slide.kind == "cover" || slide.kind == "section" }}
         {{ slide.content |> md }}
         {{ else if slide.kind == "communities" }}

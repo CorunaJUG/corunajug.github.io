@@ -1,12 +1,12 @@
 ---
 type: slide
 order: 8
-kind: content
-title: Cascarilla Tech
-link: https://cascarillatech.org/
+kind: cover
+hexBg: "#F6F4EE"
 ---
 
-Cascarilla Tech agrupa a las comunidades tecnológicas de A Coruña bajo un
-mismo paraguas, para coordinar eventos y recursos compartidos.
+![Cascarilla Tech](/img/organizers/cascarillatech-logo.png)
 
-[Visitar cascarillatech.org](https://cascarillatech.org/)
+# Cascarilla Tech
+
+Asociación de comunidades tecnolóxicas de A Coruña

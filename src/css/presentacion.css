@@ -55,7 +55,7 @@ body.pres-body {
     width: 40vw;
     margin-bottom: 1.2em;
     padding: 2em;
-    background-color: #fff;
+    background-color: var(--pres-hex-bg, #fff);
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
