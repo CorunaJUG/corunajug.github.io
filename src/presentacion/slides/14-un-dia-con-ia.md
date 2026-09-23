@@ -4,7 +4,7 @@ order: 14
 kind: cover
 ---
 
-![CoruñaJUG](/img/corunajug-logo.png)
+![Cascarilla Tech](/img/organizers/cascarillatech-logo.png)
 
 # Un día con IA (21 de noviembre)
 
