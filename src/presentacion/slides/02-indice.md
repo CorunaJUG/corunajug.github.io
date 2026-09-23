@@ -10,3 +10,4 @@ bigText: true
 2. Agradecimiento
 3. Promosió
 4. Coruña JUG
+5. Piscolabis
