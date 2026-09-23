@@ -8,5 +8,3 @@ hexBg: "#F6F4EE"
 ![Cascarilla Tech](/img/organizers/cascarillatech-logo.png)
 
 # Cascarilla Tech
-
-Asociación de comunidades tecnolóxicas de A Coruña
