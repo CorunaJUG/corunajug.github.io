@@ -1,6 +1,6 @@
 ---
 type: slide
-order: 8
+order: 10
 kind: cover
 hexBg: "#F6F4EE"
 ---

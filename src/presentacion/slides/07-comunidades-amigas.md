@@ -1,9 +1,8 @@
 ---
 type: slide
-order: 5
+order: 7
 kind: communities
 title: Comunidades amigas
 ---
 
 <!-- contenido generado a partir de _data/comunidades_amigas.yaml -->
-

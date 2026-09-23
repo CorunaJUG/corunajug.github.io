@@ -1,6 +1,6 @@
 ---
 type: slide
-order: 7
+order: 9
 kind: content
 link: https://www.oshwdem.org/
 ---

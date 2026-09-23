@@ -6,5 +6,6 @@ title: Índice
 ---
 
 1. Presentaciones
-2. Promosió
-3. Coruña JUG
+2. Agradecimiento
+3. Promosió
+4. Coruña JUG
