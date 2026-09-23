@@ -3,6 +3,7 @@ type: slide
 order: 2
 kind: content
 title: Índice
+bigText: true
 ---
 
 1. Presentaciones
