@@ -5,10 +5,10 @@ kind: content
 title: CoruñaJUG
 ---
 
-- Octubre: Charla sobre IA
-- Noviembre: Proyecto generado con Springboot
+- Octubre: Charla sobre IA (Sócrates)
+- Noviembre: Proyecto generado con Springboot (Iván)
 - Diciembre: Charla biográfica, seguramente el 17
-- Enero: Outbox Pattern con Spring
-- Febrero: Spring + Kafka vs Spring + MQ
+- Enero: Outbox Pattern con Spring (Itx)
+- Febrero: Spring + Kafka vs Spring + MQ (Mati)
 
 ![Imagen de ejemplo](/img/hero-background.jpeg)
