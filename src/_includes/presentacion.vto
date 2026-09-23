@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/presentacion.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+  </head>
+  <body class="pres-body">
+    {{ set slides = search.pages("type=slide", "order") }}
+    <div class="pres-deck" id="pres-deck">
+      {{ for slide of slides }}
+      <section class="pres-slide pres-slide--{{ slide.kind }}" data-slide>
+        {{ if slide.kind == "cover" || slide.kind == "section" }}
+        {{ slide.content |> md }}
+        {{ else if slide.kind == "communities" }}
+        <div class="pres-communities">
+          {{ if slide.title }}
+          <h2 class="pres-slide-title">{{ slide.title }}</h2>
+          {{ /if }}
+          <div class="pres-community-grid">
+            {{ for community of comunidades_amigas }}
+            <a
+              class="pres-community-card"
+              href="{{ community.url }}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/{{ community.img }}"
+                alt="Logo de {{ community.name }}"
+                class="pres-community-logo"
+              />
+              <h3>{{ community.name }}</h3>
+              <p>{{ community.description }}</p>
+              {{ if community.tags && community.tags.length }}
+              <div class="pres-community-tags">
+                {{ for tag of community.tags }}
+                <span class="pres-tag">{{ tag }}</span>
+                {{ /for }}
+              </div>
+              {{ /if }}
+            </a>
+            {{ /for }}
+          </div>
+        </div>
+        {{ else }}
+        <div class="pres-slide-inner">
+          {{ if slide.title }}
+          <h2 class="pres-slide-title">{{ slide.title }}</h2>
+          {{ /if }}
+          <div class="pres-slide-body">{{ slide.content |> md }}</div>
+          {{ if slide.link }}
+          <div class="pres-preview">
+            <iframe
+              src="{{ slide.link }}"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              sandbox="allow-scripts allow-same-origin allow-popups"
+              title="Vista previa de {{ slide.link }}"
+            ></iframe>
+            <p class="pres-preview-fallback">
+              Si la vista previa no carga (algunos sitios lo bloquean),
+              <a href="{{ slide.link }}" target="_blank" rel="noopener noreferrer">ábrela en una pestaña nueva</a>.
+            </p>
+          </div>
+          {{ /if }}
+        </div>
+        {{ /if }}
+      </section>
+      {{ /for }}
+    </div>
+
+    <div class="pres-controls">
+      <button type="button" class="pres-btn" id="pres-prev" aria-label="Diapositiva anterior">‹</button>
+      <span class="pres-counter"><span id="pres-current">1</span> / <span id="pres-total">{{ slides.length }}</span></span>
+      <button type="button" class="pres-btn" id="pres-next" aria-label="Diapositiva siguiente">›</button>
+      <button type="button" class="pres-btn" id="pres-fullscreen" aria-label="Pantalla completa">⛶</button>
+    </div>
+
+    <script src="/js/presentacion.js"></script>
+  </body>
+</html>

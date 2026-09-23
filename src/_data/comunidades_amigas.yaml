@@ -1,0 +1,71 @@
+- name: "GDG A Coruña"
+  description: "Comunidade aberta que conecta entusiastas da tecnoloxía na Coruña con eventos, talleres e charlas."
+  img: "img/communities/gdg.jpg"
+  url: "https://gdg.community.dev/gdg-a-coruna/"
+  tags: ["Google", "Dev", "Networking"]
+
+- name: "GPUL"
+  description: "Asociación de usuarios e desenvolvedores de Software Libre da Universidade da Coruña."
+  img: "img/communities/gpul.svg"
+  url: "https://gpul.org"
+  tags: ["Open Source", "UDC", "Linux"]
+
+- name: "CoruñaWTF"
+  description: "Comunidade tech informal da Coruña, con charlas técnicas relaxadas sobre tecnoloxías emerxentes."
+  img: "img/communities/corunawtf.png"
+  url: "https://corunawtf.github.io/page/"
+  tags: ["Frontend", "Mobile"]
+
+- name: "PythonCoruña"
+  description: "Comunidade de desenvolvedores Python da Coruña: eventos, talleres e encontros arredor do ecosistema Python."
+  img: "img/communities/python.jpeg"
+  url: "https://pythoncoruna.github.io/es/"
+  tags: ["Python", "FastAPI"]
+
+- name: "Sysarmy Galicia"
+  description: "Comunidade de sistemas que agrupa a profesionais da área, con actividade en A Coruña, Vigo e Ferrol."
+  img: "img/communities/sysarmy.png"
+  url: "https://sysarmy.galicia.dev"
+  tags: ["Sistemas"]
+
+- name: "Wordpress Coruña"
+  description: "Comunidade de usuarios de Wordpress de A Coruña."
+  img: "img/communities/wordpress.jpeg"
+  url: "https://xn--wpcorua-9za.com/es/"
+  tags: ["Wordpress"]
+
+- name: "Bricolabs"
+  description: "Asociación que reúne semanalmente a quen queira colaborar no deseño e construción de gadgets, ao estilo dun HackerSpace."
+  img: "img/communities/bricolabs_logo.png"
+  url: "https://www.bricolabs.cc/"
+  tags: ["Maker", "OSHWDem"]
+
+- name: "Coruña Tech"
+  description: "O punto de encontro das comunidades tecnolóxicas da Coruña."
+  img: "img/communities/img-logo-comunidad-corunatech.png"
+  url: "https://corunatech.org/"
+  tags: ["Meta comunidade"]
+
+- name: "Aquelarre Dixital"
+  description: "Espazo arredor das mulleres na tecnoloxía e a formación na Coruña."
+  img: "img/communities/aquelarre.jpeg"
+  url: "https://linktr.ee/aquelarredixital"
+  tags: ["Mulleres tech", "Formación"]
+
+- name: "Datola"
+  description: "Comunidade dixital sobre analítica e datos, para mergullarte no mundo dos datos."
+  img: "img/communities/logo_datola_web.webp"
+  url: "https://datola.es/"
+  tags: ["Datos", "Analítica"]
+
+- name: "Enxeñería sen fronteiras"
+  description: "Espazo de creación colectiva para poñer a tecnoloxía ao servizo do ben común."
+  img: "img/communities/esf.png"
+  url: "https://galicia.isf.es/"
+  tags: ["Enxeñería", "Comunidade"]
+
+- name: "Coruña JUG"
+  description: "Comunidade tecnolóxica nada na Coruña para unir a programadores e afeccionados arredor da JVM."
+  img: "img/corunajug-logo.png"
+  url: "https://corunajug.org/"
+  tags: ["Java", "Kotlin", "Groovy", "Scala"]
