@@ -1,6 +1,6 @@
 // Community feed of CoruñaJUG events, published following the
-// opentechevents-spec "feed-community" format (specVersion 0.3.0):
-// https://opentechevents.org/schema/v0.3/feed.schema.json
+// opentechevents-spec "feed-community" format (specVersion 0.5.0):
+// https://opentechevents.org/schema/v0.5/feed.schema.json
 //
 // Feed-level fields (organizers, license, ...) act as defaults that every
 // event inherits unless it declares its own — see x-inheritsFrom in the
@@ -41,6 +41,7 @@ function toFeedEvent(event) {
     description,
     image,
     organizers,
+    speakers,
     startDate,
     endDate,
     timezone,
@@ -61,6 +62,7 @@ function toFeedEvent(event) {
     // Only declare organizers when they differ from the feed default:
     // declaring them REPLACES the inherited list rather than adding to it.
     ...(isDefaultOrganizer(organizers) ? {} : { organizers }),
+    ...(speakers && speakers.length ? { speakers } : {}),
     startDate,
     ...(endDate ? { endDate } : {}),
     timezone,
@@ -79,7 +81,7 @@ function asArray(events) {
   return Array.isArray(events) ? events : Object.values(events ?? {});
 }
 
-// The spec (OTE v0.3, D015) rejects a feed where any event's updatedAt is
+// The spec (OTE v0.5, D015) rejects a feed where any event's updatedAt is
 // later than the feed's own — the feed can't contain a revision that,
 // per its own timestamp, didn't exist yet when it was generated. A
 // hardcoded feed-level updatedAt drifts out of sync the moment an event
@@ -101,7 +103,7 @@ export default function ({ upcoming_events, last_events }) {
     .map(toFeedEvent);
 
   const feed = {
-    specVersion: "0.3.0",
+    specVersion: "0.5.0",
     title: "Eventos de CoruñaJUG",
     description:
       "Charlas y meetups de la comunidad Coruña Java User Group.",
