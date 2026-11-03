@@ -111,7 +111,7 @@
         <div class="container">
           <h3 class="site-block-title">Past Meetups</h3>
           <div class="columns is-multiline is-mobile">
-            {{ set sortedLastEvents = (Array.isArray(last_events) ? last_events : Object.values(last_events ?? {})).slice().sort((a, b) => b.startDate.localeCompare(a.startDate)) }}
+            {{ set sortedLastEvents = (Array.isArray(last_events) ? last_events : Object.values(last_events ?? {})).slice().sort((a, b) => b.startDate.localeCompare(a.startDate)).slice(0, 8) }}
             {{ for event of sortedLastEvents }}
             <div class="column is-one-quarter-desktop is-half-tablet is-half-mobile">
               {{ if event.url }}
